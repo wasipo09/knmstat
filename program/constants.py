@@ -2,7 +2,7 @@ from dydx3.constants import API_HOST_GOERLI, API_HOST_MAINNET
 from decouple import config
 
 # !!!! SELECT MODE !!!!
-MODE = "DEVELOPMENT"
+MODE = "PRODUCTION"
 
 # Close all open positions and orders
 ABORT_ALL_POSITIONS = True
@@ -23,7 +23,7 @@ RESOLUTION = "1HOUR"
 WINDOW = 21
 
 # Thresholds - Opening
-MAX_HALF_LIFE = 8
+MAX_HALF_LIFE = 15
 ZSCORE_THRESH = 1.5
 USD_PER_TRADE = 20
 USD_MIN_COLLATERAL = 160
